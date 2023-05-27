@@ -113,11 +113,11 @@ hr {
   flex-direction: column;
   margin-left: 30px;
   margin-top: 10px;
-  height: 370px;
+  height: 315px;
 
 }
 
-/* scrollbar css */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -155,14 +155,17 @@ hr {
 
 
 .top-section {
-  background: linear-gradient(rgba(172, 58, 163, 0.8), rgba(81, 20, 71, 0.8)100%);
-  /* height: 390px; */
+  /* background-color: white; */
+  background-image: linear-gradient(rgba(149, 76, 167, 0.93)0%, rgba(50, 6, 50, 0.855)90%);
+ 
 
 }
 
+
+
 .song-container {
   width: 100%;
-  background: linear-gradient(rgba(85, 34, 85, 0.9)0%, rgb(34, 25, 35)30%);
+  background-image: linear-gradient(rgba(32, 1, 32, 0.791)0%, rgba(14, 14, 14,0.855)30%, rgb(17,17,17)50%);
 
 
 }
@@ -277,8 +280,8 @@ td {
 
 
 .song-image img {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
 }
 
 .song-title {
@@ -396,6 +399,7 @@ td {
 
 
 
+
 .right {
   display: flex;
   flex-direction: column;
@@ -403,6 +407,7 @@ td {
   overflow-x: hidden;
   grid-column-start: 2;
   grid-column-end: 3;
+  background-color: rgb(169, 48, 159);
 
 }
 
@@ -475,12 +480,12 @@ td {
   appearance: none;
   background: transparent;
   cursor: pointer;
-  /* width: 15rem; */
+ 
 }
 
 #volume::-webkit-slider-runnable-track {
   background: white;
-  /* height: 1rem; */
+ 
   border: 0px solid black;
   border-radius: 12px;
   height: 0.5rem;
@@ -506,7 +511,7 @@ td {
   padding: 20px;
 }
 
-.card1 {
+.card {
   height: 300px;
   color: #CACACA;
   background-color: rgb(30, 29, 29);
@@ -518,7 +523,7 @@ td {
 }
 
 
-.card1 img {
+.card img {
   height: 170px;
   border-radius: 0px solid black;
   border-radius: 30px;
@@ -528,7 +533,7 @@ td {
 
 }
 
-.card2 {
+.card {
   height: 300px;
   color: #CACACA;
   background-color: rgb(30, 29, 29);
@@ -539,7 +544,7 @@ td {
   justify-content: center;
 }
 
-.card2 img {
+.card img {
   height: 170px;
   border-radius: 0px solid black;
   border-radius: 30px;
@@ -548,7 +553,7 @@ td {
   top: -45px;
 }
 
-.card3 {
+.card {
   height: 300px;
   color: #CACACA;
   border: 0px solid red;
@@ -560,7 +565,7 @@ td {
 
 }
 
-.card3 img {
+.card img {
   height: 170px;
   border-radius: 0px solid black;
   border-radius: 30px;
@@ -569,7 +574,7 @@ td {
   top: -45px;
 }
 
-.card4 {
+.card {
   height: 300px;
   color: #CACACA;
   background-color: rgb(30, 29, 29);
@@ -580,7 +585,7 @@ td {
   justify-content: center;
 }
 
-.card4 img {
+.card img {
   height: 170px;
   border: 0px solid black;
   border-radius: 34px;
@@ -589,7 +594,7 @@ td {
   top: -45px;
 }
 
-.card5 {
+.card {
   height: 300px;
   color: #CACACA;
   background-color: rgb(30, 29, 29);
@@ -600,7 +605,7 @@ td {
   justify-content: center;
 }
 
-.card5 img {
+.card img {
 
   height: 170px;
   border: 0px solid black;
@@ -612,23 +617,23 @@ td {
 }
 
 
-.card1:hover {
+.card:hover {
   background-color: rgb(36, 35, 35);
 }
 
-.card2:hover {
+.card:hover {
   background-color: rgb(36, 35, 35);
 }
 
-.card3:hover {
+.card:hover {
   background-color: rgb(36, 35, 35);
 }
 
-.card4:hover {
+.card:hover {
   background-color: rgb(36, 35, 35);
 }
 
-.card5:hover {
+.card:hover {
   background-color: rgb(36, 35, 35);
 }
 
@@ -654,51 +659,17 @@ td {
   position: relative;
   left: 150px;
   top: -88px;
-  opacity: 0;
-  transform: translateY(-6px);
-  font-size: 3em;
-  transition: 0.3s;
+  opacity:0 ;
+  
+
+  transition: 0.288s ease-in;
 }
 
-.card1:hover .play-hover {
-  position: relative;
-  left: 150px;
-  top: -88px;
-  transform: translateY(-6px);
-  font-size: 3em;
-  transition: 0.3s;
-  opacity: 1;
-}
-
-.card2:hover .play-hover {
-
-  transform: translateY(-6px);
-  font-size: 3em;
-  transition: 0.3s;
-  opacity: 1;
-}
-
-.card3:hover .play-hover {
-
-  transform: translateY(-6px);
-  font-size: 3em;
-  transition: 0.3s;
-  opacity: 1;
-}
-
-.card4:hover .play-hover {
-  transform: translateY(-6px);
-  font-size: 3em;
-  transition: 0.3s;
-
-  opacity: 1;
-}
-
-.card5:hover .play-hover {
-  transform: translateY(-6px);
-  font-size: 3em;
-  transition: 0.3s;
-
+.card:hover .play-hover {
+ 
+ 
+  font-size: 2.5em;
+  transform: translateY(-5px);
   opacity: 1;
 }
 
@@ -709,7 +680,7 @@ td {
 
 
 
-/* for responsiveness */
+
 @media only screen and (max-width : 860px) {
   .left {
     display: none;
@@ -838,8 +809,16 @@ td {
 }
 
 
-
+.block{
+  width: 80%;
+}
 
 .block:hover {
-  background-color: rgba(71,71,71,0.568);
+  background-color: rgba(71,71,71,0.368);
+  width: 80%;
+} 
+
+
+.bt{
+  color: white;
 }
